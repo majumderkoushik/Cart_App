@@ -28,9 +28,9 @@ const ProductsList = ({ products, addToCart, removeFromCart }) => {
       <ul className='flex flex-col items-center'>
         {products.map((product) => (
           <li key={product.id} className='flex items-center justify-around bg-gradient-to-r from-teal-500 to-indigo-500  text-white font-semibold mb-2 w-[95%] '>
-            <div>
+            <div className='flex justify-between w-36'>
               <span>{product.name}</span>
-              <p>${product.price}</p>
+              <p>{product.price}</p>
             </div>
             <div className='h-14 flex justify-center items-center w-28'>
               <div className='w-full h-8  border-2 flex justify-around items-center bg-blue-400 border-black rounded-full'>
